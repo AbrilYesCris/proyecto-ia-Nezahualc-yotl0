@@ -1,0 +1,66 @@
+{
+  "busqueda": {
+    "BFS": {
+      "ruta": "Nezahualcóyotl -> Toluca -> Texcoco -> Chalco -> Ecatepec -> Naucalpan -> Tlalnepantla -> Cuautitlán Izcalli -> Chimalhuacán -> Teotihuacán -> Nezahualcóyotl",
+      "costo_km": 377.25,
+      "longitud_solucion": 10,
+      "nodos_expandidos": 986410,
+      "tiempo_s": 1.4014
+    },
+    "DFS": {
+      "ruta": "Nezahualcóyotl -> Toluca -> Texcoco -> Chalco -> Ecatepec -> Naucalpan -> Tlalnepantla -> Cuautitlán Izcalli -> Chimalhuacán -> Teotihuacán -> Nezahualcóyotl",
+      "costo_km": 377.25,
+      "longitud_solucion": 10,
+      "nodos_expandidos": 10,
+      "tiempo_s": 0.0001
+    },
+    "Costo uniforme": {
+      "ruta": "Nezahualcóyotl -> Chalco -> Toluca -> Naucalpan -> Tlalnepantla -> Cuautitlán Izcalli -> Ecatepec -> Teotihuacán -> Texcoco -> Chimalhuacán -> Nezahualcóyotl",
+      "costo_km": 254.05,
+      "longitud_solucion": 10,
+      "nodos_expandidos": 168309,
+      "tiempo_s": 1.3246
+    },
+    "Voraz": {
+      "ruta": "Nezahualcóyotl -> Toluca -> Teotihuacán -> Cuautitlán Izcalli -> Naucalpan -> Tlalnepantla -> Ecatepec -> Chalco -> Texcoco -> Chimalhuacán -> Nezahualcóyotl",
+      "costo_km": 340.13,
+      "longitud_solucion": 10,
+      "nodos_expandidos": 70945,
+      "tiempo_s": 0.7992
+    },
+    "A*": {
+      "ruta": "Nezahualcóyotl -> Chalco -> Toluca -> Naucalpan -> Tlalnepantla -> Cuautitlán Izcalli -> Ecatepec -> Teotihuacán -> Texcoco -> Chimalhuacán -> Nezahualcóyotl",
+      "costo_km": 254.05,
+      "longitud_solucion": 10,
+      "nodos_expandidos": 5205,
+      "tiempo_s": 0.2208
+    },
+    "A* con h_vecino": {
+      "ruta": "Nezahualcóyotl -> Chalco -> Toluca -> Naucalpan -> Tlalnepantla -> Cuautitlán Izcalli -> Ecatepec -> Teotihuacán -> Texcoco -> Chimalhuacán -> Nezahualcóyotl",
+      "costo_km": 254.05,
+      "longitud_solucion": 10,
+      "nodos_expandidos": 78551,
+      "tiempo_s": 0.9199
+    }
+  },
+  "genetico": {
+    "Config 1 (pob=30, cruza=0.7, mut=0.05)": {
+      "ruta": "Nezahualcóyotl -> Chimalhuacán -> Ecatepec -> Tlalnepantla -> Naucalpan -> Toluca -> Cuautitlán Izcalli -> Teotihuacán -> Texcoco -> Chalco -> Nezahualcóyotl",
+      "costo_km": 272.12,
+      "tiempo_s": 0.0582,
+      "generaciones": 100
+    },
+    "Config 2 (pob=50, cruza=0.8, mut=0.10)": {
+      "ruta": "Nezahualcóyotl -> Chimalhuacán -> Texcoco -> Teotihuacán -> Ecatepec -> Cuautitlán Izcalli -> Tlalnepantla -> Naucalpan -> Toluca -> Chalco -> Nezahualcóyotl",
+      "costo_km": 254.05,
+      "tiempo_s": 0.1053,
+      "generaciones": 100
+    },
+    "Config 3 (pob=100, cruza=0.9, mut=0.20)": {
+      "ruta": "Nezahualcóyotl -> Chalco -> Chimalhuacán -> Texcoco -> Teotihuacán -> Ecatepec -> Cuautitlán Izcalli -> Tlalnepantla -> Naucalpan -> Toluca -> Nezahualcóyotl",
+      "costo_km": 254.77,
+      "tiempo_s": 0.2181,
+      "generaciones": 100
+    }
+  }
+}

@@ -1,0 +1,90 @@
+{
+  "dimensiones": [
+    4424,
+    37
+  ],
+  "nulos": 0,
+  "distribucion_clases": {
+    "Graduado": 2209,
+    "Deserción": 1421,
+    "Matriculado": 794
+  },
+  "division": {
+    "entrenamiento": 3096,
+    "validacion": 664,
+    "prueba": 664
+  },
+  "modelos": {
+    "Regresión logística": {
+      "validacion": {
+        "exactitud": 0.7455,
+        "precision": 0.6616,
+        "recall": 0.6414,
+        "f1": 0.644
+      },
+      "prueba": {
+        "exactitud": 0.756,
+        "precision": 0.6862,
+        "recall": 0.655,
+        "f1": 0.6608
+      }
+    },
+    "Árbol de decisión": {
+      "validacion": {
+        "exactitud": 0.7334,
+        "precision": 0.6834,
+        "recall": 0.6496,
+        "f1": 0.6596
+      },
+      "prueba": {
+        "exactitud": 0.738,
+        "precision": 0.6839,
+        "recall": 0.6341,
+        "f1": 0.6444
+      }
+    }
+  },
+  "variables_importantes": {
+    "Materias aprobadas 2.º sem": 0.1539,
+    "Promedio 2.º sem": 0.096,
+    "Materias aprobadas 1.er sem": 0.0828,
+    "Promedio 1.er sem": 0.0684,
+    "Calificación de admisión": 0.0428,
+    "Evaluaciones 2.º sem": 0.0398,
+    "Edad al inscribirse": 0.0386,
+    "Calificación previa": 0.0383
+  },
+  "red_neuronal": {
+    "pruebas": {
+      "lr=0.001, lote=32": {
+        "f1_validacion": 0.6517,
+        "epocas": 24
+      },
+      "lr=0.001, lote=64": {
+        "f1_validacion": 0.6589,
+        "epocas": 26
+      },
+      "lr=0.01, lote=32": {
+        "f1_validacion": 0.6455,
+        "epocas": 13
+      },
+      "lr=0.01, lote=64": {
+        "f1_validacion": 0.6775,
+        "epocas": 14
+      }
+    },
+    "mejor_configuracion": "lr=0.01, lote=64",
+    "prueba": {
+      "exactitud": 0.7545,
+      "precision": 0.7035,
+      "recall": 0.6524,
+      "f1": 0.6648
+    },
+    "validacion": {
+      "exactitud": 0.756,
+      "precision": 0.7116,
+      "recall": 0.6647,
+      "f1": 0.6775
+    }
+  }
+}
